@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Nivel Mestre
+
 int main(){
 
     char estado1[50];
@@ -11,6 +13,7 @@ int main(){
     int pontosturisticos1;
     float densidadepopulacional1;
     float pibpercapita1;
+    float superpoder1;
 
     printf ("Estado: \n");
     scanf (" %s", &estado1);
@@ -66,6 +69,7 @@ int main(){
     int pontosturisticos2;
     float densidadepopulacional2;
     float pibpercapita2;
+    float superpoder2;
 
     printf ("\nEstado: \n");
     scanf (" %s", &estado2);
@@ -110,6 +114,24 @@ int main(){
     printf("Densidade Populacional: %.2f hab/km² \n", densidadepopulacional2);
 
     printf("PIB per capita: %.2f real \n", pibpercapita2);
+
+    // Exibição dos resultados
+    printf("\nComparacao de Cartas:\n");
+
+    printf("Populacao: Carta %d venceu (%d)\n", populacao1 > populacao2 ? 1 : 2, populacao1 > populacao2);
+
+    printf("Area: Carta %d venceu (%d)\n", area1 > area2 ? 1 : 2, area1 > area2);
+
+    printf("PIB: Carta %d venceu (%d)\n", pib1 > pib2 ? 1 : 2, pib1 > pib2);
+
+    printf("Pontos Turisticos: Carta %d venceu (%d)\n", pontosturisticos1 > pontosturisticos2 ? 1 : 2, pontosturisticos1 > pontosturisticos2);
+
+    printf("Densidade Populacional: Carta %d venceu (%d)\n", densidadepopulacional1 > densidadepopulacional2 ? 1 : 2, densidadepopulacional1 > densidadepopulacional2);
+
+    printf("PIB per Capita: Carta %d venceu (%d)\n", pibpercapita1 > pibpercapita2 ? 1 : 2, pibpercapita1 > pibpercapita2);
+
+    printf("Super Poder: Carta %d venceu (%d)\n", superpoder1 > superpoder2 ? 1 : 2, superpoder1 > superpoder2);
+
 
     return 0;
 }
