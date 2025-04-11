@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Nivel Mestre
+//Nivel Novato (tema2)
 
 int main(){
 
@@ -132,6 +132,50 @@ int main(){
 
     printf("Super Poder: Carta %d venceu (%d)\n", superpoder1 > superpoder2 ? 1 : 2, superpoder1 > superpoder2);
 
+
+    printf("\nCOMPARAÇÕES:\n\n");
+
+    if( populacao1 > populacao2 ){
+        printf("A população 1 é maior que a população 2\n");
+    } else {
+        printf("A população 2 é maior que a população 1\n");
+    }
+
+    if( area1 > area2 ){
+        printf("A Area 1 é maior que a area 2\n");
+    } else {
+        printf("A area 2 é maior que a area 1\n");
+    }
+
+    if( pib1 > pib2 ){
+        printf("A PIB 1 é maior que a PIB 2\n");
+    } else {
+        printf("A PIB 2 é maior que a PIB 1\n");
+    }
+
+    if( pontosturisticos1 > pontosturisticos2 ){
+        printf("A cidade 1 tem mais pontos turisticos que a area 2\n");
+    } else {
+        printf("A cidade 2 tem mais pontos turisticos que a area 1\n");
+    }
+
+    if( densidadepopulacional1 > densidadepopulacional2 ){
+        printf("A Densidade populacional 1 é maior que a Densidade populacional 2\n");
+    } else {
+        printf("A Densidade populacional 2 é maior que a Densidade populacional 1\n");
+    }
+
+    if( pibpercapita1 > pibpercapita2 ){
+        printf("O pibpercapita 1 é maior que o pibpercapita 2\n");
+    } else {
+        printf("O pibpercapita 2 é maior que o pibpercapita 1\n");
+    }
+
+    if( superpoder1 > superpoder2 ){
+        printf("O super poder 1 é maior que o super poder 2\n");
+    } else {
+        printf("O super poder 2 é maior que o super poder 1\n");
+    }
 
     return 0;
 }
